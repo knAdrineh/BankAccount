@@ -8,7 +8,14 @@ if __name__ == '__main__':
     print(acc)
     acc.deposit(300)
     print(acc)
-    amount = float(input("Enter amount to withdraw : "))
+    while True:
+    try:
+        amount = float(input("Enter amount to withdraw : "))
+    except:
+        print("Invalid input!")
+        continue
+    else:
+        break
     acc.withdraw(amount)
     print(acc)
 
