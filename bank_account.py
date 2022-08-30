@@ -10,19 +10,15 @@ class Account():
         amount = int(amount)
         print(f"Money dispensed:\n100's: ${100 * (amount // 100)}")
         amount = amount % 100
-        print(f"20's: {20 * (amount // 20)}")
-        amount = amount % 20
-        print(f"5's: {5 * (amount // 5)}")
-        amount = amount % 5
-        print(f"1's: {amount}")
+        self.__twenties_remainder__(amount)
 
     def __twenties_remainder__(self,amount):
         amount = int(amount)
-        print(f"20's: {20 * (amount // 20)}")
+        print(f"20's: ${20 * (amount // 20)}")
         amount = amount % 20
-        print(f"5's: {5 * (amount // 5)}")
+        print(f"5's: ${5 * (amount // 5)}")
         amount = amount % 5
-        print(f"1's: {amount}")
+        print(f"1's: ${amount}")
 
     def __divisor__(self, amount):
         option = 0
