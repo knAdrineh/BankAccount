@@ -2,7 +2,7 @@
 from bank_account import Account
 
 
-def main():
+if __name__ == '__main__':
 
     acc = Account("Java table",500)
     print(acc)
@@ -13,4 +13,3 @@ def main():
     print(acc)
 
 
-main()
