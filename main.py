@@ -1,4 +1,7 @@
 #Adrineh Khodaverdian
+'''
+A simple bank account app
+'''
 from bank_account import Account
 
 
